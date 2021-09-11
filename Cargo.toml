@@ -1,0 +1,14 @@
+[package]
+name = "recog"
+version = "0.1.0"
+authors = ["Tokarev Artyom <tokarev28.art@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "0.2", features = ["full"] }
+tokio-postgres = "0.5"
+
+[profile.dev.package."*"]
+opt-level = 3
